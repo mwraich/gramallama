@@ -1,0 +1,34 @@
+body {
+  background: #fafafa;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  background: #fff;
+
+  .nav-logo {
+    height: 36px;
+    margin-right: 12px;
+  }
+
+  .nav-brand-name {
+    font-family: $font-merienda;
+  }
+
+  .container {
+    height: 76px;
+    width: 970px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+}
