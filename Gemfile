@@ -14,7 +14,8 @@ gem 'turbolinks', '~> 5'
 # discretionary gems
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'clearance'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass', '~> 5.4.1'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 

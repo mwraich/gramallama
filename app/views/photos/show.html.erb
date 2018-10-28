@@ -2,6 +2,26 @@
   <% (1..@count).each do |n| %>
     <li class='photo-list-item'>
       <%= image_tag "#{@name}/#{n}.jpg", class: 'photo-img' %>
+
+      <div class='feedback'>
+        <div class='action-icons'>
+          <ul class='action-icons__list-item action-icons__list-item--left' data-name="<%= @name %>" data-id="<%= n %>">
+            <li><%= icon 'far', 'heart', class: 'action-icon action-icon-like' %></li>
+            <li><%= icon 'far', 'comment', class: 'action-icon' %></li>
+          </ul>
+          <ul class='action-icons__list-item action-icons__list-item--right'>
+            <li><%= icon 'far', 'bookmark', class: 'action-icon' %></li>
+          </ul>
+        </div>
+
+        <div class='likes-count'>
+          <strong><%= @likes_arr.sample %> likes</strong>
+        </div>
+
+        <div class='comments'>
+
+        </div>
+      </div>
     </li>
   <% end %>
 </ul>

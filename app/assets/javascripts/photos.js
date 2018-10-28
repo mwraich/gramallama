@@ -1,2 +1,9 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+$(document).on('turbolinks:load', function() {
+  $('.action-icon-like').on('click', function() {
+    var icon = $(this).parent().parent().find('.action-icon-like');
+
+    icon.toggleClass('red');
+    icon.toggleClass('far');
+    icon.toggleClass('fas');
+  });
+})

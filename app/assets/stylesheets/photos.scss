@@ -1,9 +1,61 @@
 .photo-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.photo-list-item {
+  margin-bottom: 3rem;
+}
+
 .photo-img {
   width: 100%;
+}
+
+.feedback {
+  padding: 1rem 2rem;
+}
+
+.action-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  &__list-item {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    &--left {
+      .action-icon:first-child {
+        padding-left: 0;
+      }
+    }
+
+    &--right {
+      .action-icon {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.action-icon {
+  font-size: 3.5rem;
+  padding: 1rem;
+  color: #333;
+}
+
+.likes-count {
+  font-family: sans-serif;
+  font-size: 2.2rem;
+  color: #333;
+}
+
+.red {
+  color: red;
 }
