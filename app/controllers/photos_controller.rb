@@ -1,3 +1,7 @@
 class PhotosController < ApplicationController
-  def index; end
+  def suri
+    @name = 'suri'
+    @count = 9
+    render :show
+  end
 end

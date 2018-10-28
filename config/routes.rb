@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root to: 'photos#index'
+  get 'suri' => 'photos#suri'
 end
