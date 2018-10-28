@@ -1,11 +1,16 @@
 <ul class='photo-list'>
-  <% (1..@count).each do |n| %>
+  <% (2..@count).each do |n| %>
     <li class='photo-list-item'>
+      <header class='photo-header'>
+        <%= image_tag "#{@name}/1.jpg", class: 'avatar' %>
+        <span class='username'><%= @name %></span>
+      </header>
+
       <%= image_tag "#{@name}/#{n}.jpg", class: 'photo-img' %>
 
       <div class='feedback'>
         <div class='action-icons'>
-          <ul class='action-icons__list-item action-icons__list-item--left' data-name="<%= @name %>" data-id="<%= n %>">
+          <ul class='action-icons__list-item action-icons__list-item--left'>
             <li><%= icon 'far', 'heart', class: 'action-icon action-icon-like' %></li>
             <li><%= icon 'far', 'comment', class: 'action-icon' %></li>
           </ul>
