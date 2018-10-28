@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="top-bar">
+      <%= image_tag 'gramallama/gramallama_noshadow.svg', class: 'nav-logo' %>
+    </nav>
+
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
