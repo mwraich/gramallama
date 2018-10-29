@@ -1,3 +1,24 @@
+<header class='profile-intro'>
+  <%= image_tag "#{@name}/1.jpg", class: 'profile-image avatar big' %>
+
+  <div class='profile-stats'>
+    <ul class='statistic-list'>
+      <li class='statistic'>
+        <div class='number'><%= @count %></div>
+        <div class='label'>posts</div>
+      </li>
+      <li class='statistic'>
+        <div class='number'>1,390</div>
+        <div class='label'>followers</div>
+      </li>
+      <li class='statistic'>
+        <div class='number'>75</div>
+        <div class='label'>following</div>
+      </li>
+    </ul>
+  </div>
+</header>
+
 <ul class='photo-list'>
   <% (2..@count).each do |n| %>
     <li class='photo-list-item'>
