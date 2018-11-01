@@ -24,13 +24,34 @@
 </div>
 
 <ul class='photo-list'>
+  <% if @profile[:name] == 'suri' %>
+      <li class='photo-list-item'>
+        <header class='photo-header'>
+          <%= image_tag "#{@profile[:name]}/1.jpg", class: 'avatar' %>
+          <span class='username'><%= @profile[:name] %></span>
+        </header>
+        <%= image_tag "#{@profile[:name]}/0.png", class: 'photo-img' %>
+
+        <div class='feedback'>
+          <div class='action-icons'>
+            <ul class='action-icons__list-item action-icons__list-item--left'>
+              <li><%= icon 'far', 'star', class: 'action-icon action-icon-like' %></li>
+              <li><%= icon 'far', 'comment-alt', class: 'action-icon' %></li>
+            </ul>
+          </div>
+
+          <div class='likes-count'>
+            <strong>6548 likes</strong>
+          </div>
+        </div>
+      </li>
+  <% end %>
   <% (2..@profile[:photo_count]).each do |n| %>
     <li class='photo-list-item'>
       <header class='photo-header'>
         <%= image_tag "#{@profile[:name]}/1.jpg", class: 'avatar' %>
         <span class='username'><%= @profile[:name] %></span>
       </header>
-
       <%= image_tag "#{@profile[:name]}/#{n}.jpg", class: 'photo-img' %>
 
       <div class='feedback'>
