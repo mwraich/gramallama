@@ -6,6 +6,18 @@ class PhotosController < ApplicationController
 
   private
 
+  def anjulie
+    {
+        name: 'anjulie',
+        full_name: 'Anjulie A',
+        followers: 1163,
+        following: 157,
+        posts: 244,
+        photo_count: 12,
+        likes_range: (100..200).to_a
+    }
+  end
+
   def ankita
     {
       name: 'ankita',
@@ -26,7 +38,7 @@ class PhotosController < ApplicationController
       followers: 848,
       following: 153,
       posts: 216,
-      photo_count: 24,
+      photo_count: 21,
       likes_range: (100..250).to_a
     }
   end
